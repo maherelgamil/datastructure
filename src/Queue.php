@@ -48,7 +48,7 @@ class Queue
             return;
         }
 
-        unset($this->queue[$this->front]);
+        $this->queue[$this->front]= null;
 
         $this->front = ($this->front + 1) % $this->max;
 
