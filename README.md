@@ -4,22 +4,38 @@ Datastructures For PHP
 # Datastructures:
 
 ## Queue:
+
+### Create new `Queue`:
 ```php
+$queue = new \DS\Queue(5);
+```
 
-$queue = new Queue(5);
+### Add to `Queue`:
+```php
+$queue->enqueue();
+```
 
-$queue->enqueue(2);
-$queue->enqueue(3);
-$queue->enqueue(3);
-$queue->enqueue(3);
-$queue->enqueue(4);
-
+### remove from `Queue`:
+```php
 $queue->dequeue();
-$queue->dequeue();
-$queue->dequeue();
+```
 
-$queue->enqueue(4);
-$queue->enqueue(4);
-
+### print `Queue`:
+```php
 $queue->print();
+```
+
+### check if `Queue` is full:
+```php
+$queue->full();
+```
+
+### check if `Queue` is empty:
+```php
+$queue->empty();
+```
+
+### get `Queue` length:
+```php
+$queue->length();
 ```

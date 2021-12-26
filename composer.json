@@ -1,0 +1,17 @@
+{
+    "name": "maherelgamil/php-datastructures",
+    "description": "Applied datastructures for php",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DS\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maher El Gamil",
+            "email": "maherbusnes@gmail.com"
+        }
+    ],
+    "require": {}
+}

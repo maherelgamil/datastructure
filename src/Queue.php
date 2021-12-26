@@ -1,5 +1,7 @@
 <?php
 
+namespace DS;
+
 class Queue
 {
     private int $rear = -1;
