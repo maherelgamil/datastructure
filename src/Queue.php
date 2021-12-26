@@ -13,15 +13,11 @@ class Queue
     public function __construct($max)
     {
         $this->max = $max;
-
-        for ($i = 0; $i < $max; $i++) {
-            $this->queue[$i] = null;
-        }
     }
 
     public function empty(): bool
     {
-        return empty($this->queue);
+        return $this->count === 0;
     }
 
     public function full(): bool
